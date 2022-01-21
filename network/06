@@ -1,0 +1,10 @@
+#/bin/bash
+find '/etc/resolv.conf'
+
+# The file resolv.conf typically contains search directives that specify the default search domains used for completing a given query name to a fully qualified domain name when no domain suffix is supplied. 
+# For instance, search example.com local.test configures the resolver to try additionally somehost.example.com and somehost.local.test.
+# it also contains a list of IP addresses of nameservers for resolution. 
+# For instance, nameserver 1.1.1.1 configures the resolver to query for the name server with IP 1.1.1.1.
+# Additional nameserver directives after the first are only used when the first or last used server is unavailable.
+
+# https://en.wikipedia.org/wiki/Resolv.conf

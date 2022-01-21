@@ -1,0 +1,15 @@
+Go to https://www.whatismyip.com/dns-lookup/.
+Insert 'who.int' URL in the search box and press enter.
+Follow the @Domain Name Server IP: XXX.XX.XXX.XXX" -link.
+Read results.
+
+OrgName:        Cloudflare, Inc.
+OrgId:          CLOUD14
+Address:        101 Townsend Street
+City:           San Francisco
+StateProv:      CA
+PostalCode:     94107
+Country:        US
+RegDate:        2010-07-09
+Updated:        2021-07-01
+Ref:            https://rdap.arin.net/registry/entity/CLOUD14
