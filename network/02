@@ -1,0 +1,4 @@
+#/bin/bash
+broadcast=`ifconfig -a | grep "en0" -A3 |  grep "inet " | awk '{print $6}'`
+echo 'Ethernet (en0) broadcast address:\n'$broadcast'\n\nAdrresses in the same subnet: '
+ping -c2 $broadcast | grep from | awk '{print $4}' | tail -n +2

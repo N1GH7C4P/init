@@ -1,2 +1,2 @@
 #/bin/bash
-networksetup -listallhardwareports | awk '/Hardware Port: /{getline; print $2}'
+ifconfig -l
