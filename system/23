@@ -1,0 +1,13 @@
+on virtual the machine: 
+- After creating the new user (prev exercise), restart the vm and login with the new users credentials.
+- switch to root user su -
+- add the new user to the sudo users (usermod -aG sudo <new_username>) 
+- set the new user as the active user (su <new_username>)
+- restart the ssh servce (sudo service ssh restart)
+
+(or use exit / logout commands then login to user wanted and run ssh)
+
+on the host machine: 
+- ssh <new_username>@<ip> -p <port>
+
+for example: ssh kpolojar@127.0.0.1 -p 2222

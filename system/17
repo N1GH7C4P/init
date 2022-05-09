@@ -1,1 +1,2 @@
 ssh -p <port> <username>@<ip>
+example: ssh -p 2222 kpolojar@
