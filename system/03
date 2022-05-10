@@ -1,1 +1,2 @@
 /etc/hostname
+(also add to /etc/hosts with ip address to be able to use sudo)

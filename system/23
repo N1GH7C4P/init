@@ -4,6 +4,7 @@ on virtual the machine:
 - add the new user to the sudo users (usermod -aG sudo <new_username>) 
 - set the new user as the active user (su <new_username>)
 - restart the ssh servce (sudo service ssh restart)
+- create ssh-key pair (ssh-keygen)
 
 (or use exit / logout commands then login to user wanted and run ssh)
 
@@ -11,3 +12,7 @@ on the host machine:
 - ssh <new_username>@<ip> -p <port>
 
 for example: ssh kpolojar@127.0.0.1 -p 2222
+
+- ssh-copy-id <new_username>@hostname
+
+for example: ssh-copy-id kpolojar@initDebian

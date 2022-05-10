@@ -1,0 +1,4 @@
+#!/bin/bash
+find . -type f -print0 | xargs -0 sed -i '' 's/'${1}'/'${2}'/g'
+
+# The script goes though all files in current folder and its subfolder and replaceses all occurances of string passed as first parameter with string passed as second parameter.
