@@ -1,8 +1,8 @@
 #/bin/bash
 broadcast=`ifconfig -a | grep "en0" -A3 |  grep "inet " | awk '{print $6}'`
 echo 'Ethernet (en0) broadcast address:\n'$broadcast'\n\nAdrresses in the same subnet: '
-
+ping $broadcast -c2 2>&1 >/dev/null
 arp -a | grep `echo "${broadcast//.255}"` | awk {'print $2'} | sed 's/)//' | sed 's/(//'
 
 # ping -c2 $broadcast | grep from | awk '{print $4}' | tail -n +2 | sed 's/.$//'
-# leaves some addresses out that are included in the arp table. Why?
+# Leaves some addresses out that are included in the arp table. Why?

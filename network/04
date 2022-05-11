@@ -1,2 +1,2 @@
 #/bin/bash
-netstat -nr | grep 'Internet:' -A2 |  grep 'default' | awk {'print $2'}
+netstat -nr -f inet | grep default

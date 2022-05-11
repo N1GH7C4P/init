@@ -1,2 +1,2 @@
 #/bin/bash
-ping -c1 who.int | grep 'from' | awk {'print $4'} | tr -d ':'
+nslookup who.int
