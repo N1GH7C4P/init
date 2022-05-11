@@ -1,1 +1,3 @@
 163.172.250.16
+# (traceroute 42.fr)
+# (Eval form says to only accept .12 or .13 but my traceroute always comes up with .16, I wonder why.)
